@@ -8,11 +8,13 @@
     "server_root_password":"root"
   },
   "run_list": ["recipe[apt]",
+                "recipe[build-essential]",
                "recipe[thin_chef]",
                "recipe[mysql]",
                "recipe[redis::server]",
                "recipe[mysql::server]",
                "recipe[nginx]",
+               "recipe[sphinx]",
                "recipe[nodejs]"
                ]
   }
