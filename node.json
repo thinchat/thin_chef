@@ -1,0 +1,18 @@
+ {
+  "user": { 
+    "name": "deployer",
+    "password": "$1$F0T3OkI7$pz/17a/F6g5WDjVDEB2HJ."
+  },
+  
+  "mysql": {
+    "server_root_password":"root"
+  },
+  "run_list": ["recipe[apt]",
+               "recipe[thin_chef]",
+               "recipe[mysql]",
+               "recipe[redis::server]",
+               "recipe[mysql::server]",
+               "recipe[nginx]",
+               "recipe[nodejs]"
+               ]
+  }
