@@ -26,3 +26,7 @@ user node[:user][:name] do
   supports :manage_home => true
 end
 
+gem_package "ruby-shadow" do
+  action :install
+  ignore_failure true
+end
