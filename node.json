@@ -5,7 +5,7 @@
   },
   
   "mysql": {
-    "server_root_password":"root"
+    "server_root_password":"hungry"
   },
   "run_list": ["recipe[apt]",
                 "recipe[build-essential]",
