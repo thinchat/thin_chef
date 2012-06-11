@@ -8,6 +8,7 @@
     "server_root_password":"hungry"
   },
   "run_list": ["recipe[apt]",
+               "recipe[build-essential]",
                "recipe[thin_chef]",
                "recipe[mysql]",
                "recipe[redis::server]",
